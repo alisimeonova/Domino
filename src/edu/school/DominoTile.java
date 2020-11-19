@@ -22,6 +22,13 @@ public class DominoTile {
 		return this.right;
 	}
 	
+	public void setLeft(int left) {
+		this.left = left;
+	}
+	public void setRight(int right) {
+		this.right = right;
+	}
+	
 	public void swapValues() {
 		int temp = left;
 		left = right;
@@ -38,12 +45,13 @@ public class DominoTile {
 	}
 	public String toString() {
 		char[][] arrayDomino = new char[3][6];
+		String result = "";
 		for(int row = 0; row < arrayDomino.length ; row++) {
 			for(int col = 0; col < arrayDomino.length; col++) {
-				
+				result += arrayDomino[row][col];
 			}
 		}
-		return "";
+		return result;
 	}
 	
 
